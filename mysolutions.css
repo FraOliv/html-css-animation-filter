@@ -107,14 +107,30 @@
 
 /* Start Ex-10*/
 
-.ex-10-icon {
-   animation: loading 1s linear infinite
-}
-@keyframes loading {
-0%{
-        transform: rotate(1turn);
-}
-}
+.ex-10-icon{
+    animation-name: loading;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+  }
+  @keyframes loading {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(90deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    75% {
+      transform: rotate(270deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 
 /* End Ex-10*/
 
@@ -165,12 +181,12 @@
 @keyframes move-top-ex-13 {
     0% {
         left: 10%;
-        top: -10px;
+     
     }
 
     30% {
         left: calc(100% - 30px);
-        top: -10px;
+     
     }
 
     45% {
@@ -185,12 +201,12 @@
 
     90% {
         left: -15px;
-        top: -10px;
+     
     }
 
     100% {
         left: 10%;
-        top: -10px;
+     
     }
 }
 
